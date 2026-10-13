@@ -1,0 +1,30 @@
+
+  <!ELEMENT botiga (nom, productes)>
+  <!ATTLIST botiga 
+                moneda CDATA "EUR" 
+                data_actualitzacio CDATA #REQUIRED 
+                xml:lang NMTOKEN #IMPLIED>
+  <!ELEMENT nom (#PCDATA)>
+  <!ELEMENT productes (producte+)>
+  <!ELEMENT producte (nom, categories, etiquetes, plataformes, pegi, preu, valoracio, estoc, data_llancament, descripcio)>
+  <!ATTLIST producte 
+                codi ID #REQUIRED 
+                data_actualitzacio CDATA #REQUIRED>
+  <!ELEMENT categories (categoria+)>
+  <!ELEMENT categoria (#PCDATA)>
+  <!ATTLIST categoria 
+                genre CDATA #REQUIRED>
+  <!ELEMENT etiquetes (etiqueta+)>
+  <!ELEMENT etiqueta (#PCDATA)>
+  <!ELEMENT plataformes (plataforma+)>
+  <!ELEMENT plataforma EMPTY>
+  <!ATTLIST plataforma 
+                nom (Steam|PlayStation_5|Xbox_One) #REQUIRED>
+  <!ENTITY pegi18 "PEGI&lt;18">
+  <!ENTITY pegi16 "PEGI&lt;16">
+  <!ELEMENT pegi (#PCDATA)>
+  <!ELEMENT preu (#PCDATA)>
+  <!ELEMENT valoracio (#PCDATA)>
+  <!ELEMENT estoc (#PCDATA)>
+  <!ELEMENT data_llancament (#PCDATA)>
+  <!ELEMENT descripcio (#PCDATA)>

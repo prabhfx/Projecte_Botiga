@@ -1,150 +1,235 @@
-<botiga moneda="euro">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE botiga SYSTEM "RA1_Projecte.dtd">
+<!-- Catàleg de la botiga UNLCKED: discos físics amb la clau digital d'un videojoc -->
+<!-- L'arrel guarda les dades de la botiga: la moneda (EUR per defecte) i la data de l'última actualització del catàleg (DD/MM/AAAA). -->
+<botiga xml:lang="en" moneda="EUR" data_actualitzacio="11/10/2026">
   <nom>UNLCKED</nom>
-  <productes data_actualitzacio="29/09/2026">
-    <producte1 codi="1">
+  <productes>
+
+    <!-- El codi és un número que identifica cada producte dins del catàleg i és únic. -->
+    <!-- L'atribut data_actualitzacio indica quan es va revisar per última vegada aquest producte (DD/MM/AAAA). -->
+    <producte codi="Prod_1" data_actualitzacio="29/09/2026">
       <nom>Alan Wake</nom>
+      <!-- Categories i etiquetes poden tenir més d'un valor: per això són elements contenidor amb fills repetits (categoria, etiqueta) i no atributs, perquè un atribut no es pot repetir dins d'un mateix element. -->
       <categories>
-        <categoria>Action</categoria>
-        <categoria>Horror</categoria>
+        <categoria genre="Action"/>
+        <categoria genre="Horror"/>
       </categories>
-      <plataforma>Steam</plataforma>
-      <preu>12,99</preu>
-      <valoracio>9/10</valoracio>
+      <etiquetes>
+        <etiqueta>Thriller</etiqueta>
+        <etiqueta>Single-player</etiqueta>
+      </etiquetes>
+      <!-- Un mateix disc pot donar accés a diverses plataformes. -->
+      <plataformes>
+        <plataforma nom="Steam"/>
+      </plataformes>
+      <!-- El símbol < està reservat en XML i s'escriu amb la referència d'entitat &lt; -->
+      <pegi>&pegi16;</pegi>
+      <preu>12.99</preu>
+      <!-- La valoració és un número en una escala de l'1 al 10. -->
+      <valoracio>9</valoracio>
       <estoc>400</estoc>
-      <data_llançament>16 Feb, 2012</data_llançament>
+      <data_llancament>16/02/2012</data_llancament>
       <descripcio>A Dark Presence stalks the small town of Bright Falls, pushing Alan Wake to the brink of sanity in his fight to unravel the mystery and save his love.</descripcio>
-    </producte1>
-    <producte2 codi="2">
+    </producte>
+
+    <producte codi="Prod_2" data_actualitzacio="29/09/2026">
       <nom>Dying Light</nom>
       <categories>
-        <categoria>Zombies</categoria>
-        <categoria>Survival Horror</categoria>
+        <categoria genre="Action"/>
+        <categoria genre="Survival Horror"/>
       </categories>
-      <plataforma>Steam</plataforma>
-      <preu>24,99</preu>
-      <valoracio>9/10</valoracio>
+      <etiquetes>
+        <etiqueta>Zombies</etiqueta>
+        <etiqueta>Open World</etiqueta>
+        <etiqueta>Parkour</etiqueta>
+      </etiquetes>
+      <plataformes>
+        <plataforma nom="Steam"/>
+      </plataformes>
+      <pegi>&pegi18;</pegi>
+      <preu>24.99</preu>
+      <valoracio>9</valoracio>
       <estoc>500</estoc>
-      <data_llançament>26 Jan, 2015</data_llançament>
-      <descripcio>First-person action survival game set in a post-apocalyptic open world overrun by flesh-hungry zombies. Roam a city devastated by a mysterious virus epidemic. Scavenge for supplies, craft weapons, and face hordes of the infected.</descripcio>
-    </producte2>
-    <producte3 codi="3">
+      <data_llancament>26/01/2015</data_llancament>
+      <descripcio>First-person action survival game set in a post-apocalyptic open world overrun by flesh-hungry zombies. Roam a city devastated by a mysterious virus epidemic.</descripcio>
+    </producte>
+
+    <producte codi="Prod_3" data_actualitzacio="29/09/2026">
       <nom>Marvel: Wolverine</nom>
       <categories>
-        <categoria>Action</categoria>
-        <categoria>Superheroes</categoria>
+        <categoria genre="Action"/>
       </categories>
-      <plataforma>PlayStation5</plataforma>
-      <preu>79,99</preu>
-      <valoracio>9.4/10</valoracio>
+      <etiquetes>
+        <etiqueta>Superheroes</etiqueta>
+        <etiqueta>Single-player</etiqueta>
+      </etiquetes>
+      <plataformes>
+        <plataforma nom="PlayStation_5"/>
+      </plataformes>
+      <pegi>&pegi18;</pegi>
+      <preu>79.99</preu>
+      <valoracio>9.4</valoracio>
       <estoc>700</estoc>
-      <data_llançament>15 Sep, 2026</data_llançament>
+      <data_llancament>15/09/2026</data_llancament>
       <descripcio>While searching for answers about his past, Wolverine will do whatever it takes: unleashing brutal clawing, violent rage, and an unrelenting determination to unravel the mystery of the man he used to be.</descripcio>
-    </producte3>
-    <producte4 codi="4">
+    </producte>
+
+    <producte codi="Prod_4" data_actualitzacio="29/09/2026">
       <nom>Crimson Desert Enhanced</nom>
       <categories>
-        <categoria>Action</categoria>
-        <categoria>Adventure</categoria>
-        <categoria>Open World</categoria>
+        <categoria genre="Action"/>
+        <categoria genre="Adventure"/>
       </categories>
-      <plataforma>Xbox, Steam</plataforma>
-      <preu>69,99</preu>
-      <valoracio>8/10</valoracio>
+      <etiquetes>
+        <etiqueta>Open World</etiqueta>
+        <etiqueta>Single-player</etiqueta>
+      </etiquetes>
+      <plataformes>
+        <plataforma nom="Xbox_One"/>
+        <plataforma nom="Steam"/>
+      </plataformes>
+      <pegi>&pegi18;</pegi>
+      <preu>69.99</preu>
+      <valoracio>8</valoracio>
       <estoc>350</estoc>
-      <data_llançament>19 Mar, 2026</data_llançament>
-      <descripcio>In Crimson Desert, an open-world action-adventure awaits, set on the continent of Pywel, a place where beauty and cruelty go hand in hand. You will step into the shoes of Kliff of the Graymanes and embark on a journey to reclaim everything you have lost in these lands. Explore uncharted territories, confront new gangs, and immerse yourself in a world as beautiful as it is ruthless. After the Black Bear attack, Kliff has lost his fellow Graymanes, who were like family to him. Amidst the threats and conflicts that plague the continent of Pywel, begin a journey to reunite the scattered beings in each of the stories, restore the honor of the Graymanes, and reclaim their lost home.</descripcio>
-    </producte4>
-    <producte5 codi="5">
-      <nom>Resident Evil Veronica</nom>
-      <categories>
-        <categoria>Action</categoria>
-        <categoria>Survival Horror</categoria>
-      </categories>
-      <plataforma>Steam, PlayStation5</plataforma>
-      <preu>tba</preu>
-      <valoracio>tba</valoracio>
-      <estoc>tba</estoc>
-      <data_llançament>2027</data_llançament>
-      <descripcio>Resident Evil Veronica is a remake of 2000's Resident Evil Code: Veronica. In 2027, madness and intrigue, love and hate all combine to create a chilling new entry in survival horror.</descripcio>
-    </producte5>
-    <producte6 codi="6">
+      <data_llancament>19/03/2026</data_llancament>
+      <descripcio>An open-world action-adventure set on the continent of Pywel, where beauty and cruelty go hand in hand. Play as Kliff of the Graymanes and fight to reclaim everything you have lost.</descripcio>
+    </producte>
+
+    <producte codi="Prod_5" data_actualitzacio="29/09/2026">
       <nom>Yandere Simulator</nom>
       <categories>
-        <categoria>Action</categoria>
-        <categoria>Romance</categoria>
+        <categoria genre="Action"/>
       </categories>
-      <plataforma>Windows</plataforma>
-      <preu>Free</preu>
-      <valoracio>9,2/10</valoracio>
+      <etiquetes>
+        <etiqueta>Stealth</etiqueta>
+        <etiqueta>Romance</etiqueta>
+      </etiquetes>
+      <plataformes>
+        <plataforma nom="Steam"/>
+      </plataformes>
+      <pegi>&pegi18;</pegi>
+      <preu>0.00</preu>
+      <valoracio>9.2</valoracio>
       <estoc>300</estoc>
-      <data_llançament>13 Mar, 2014</data_llançament>
-      <descripcio>Yandere Simulator is an action-stealth video game developed by YandereDev for Windows. The story follows the obsessively in love student Ayano Aishi, nicknamed "Yandere-chan", who takes the initiative to eliminate anyone she believes attracts the attention of her "senpai", Taro Yamada.</descripcio>
-    </producte6>
-    <producte7 codi="7">
+      <data_llancament>13/03/2014</data_llancament>
+      <descripcio>Yandere Simulator is an action-stealth video game developed by YandereDev. The story follows the obsessively in love student Ayano Aishi, who eliminates anyone she believes attracts the attention of her senpai.</descripcio>
+    </producte>
+
+    <producte codi="Prod_6" data_actualitzacio="29/09/2026">
       <nom>The Last of Us™ Part II Remastered</nom>
       <categories>
-        <categoria>Story Rich</categoria>
-        <categoria>Post Apocalyptic</categoria>
+        <categoria genre="Action"/>
+        <categoria genre="Adventure"/>
       </categories>
-      <plataforma>Steam, PlayStation5, Xbox One</plataforma>
-      <preu>49,99</preu>
-      <valoracio>9,5/10</valoracio>
+      <etiquetes>
+        <etiqueta>Story Rich</etiqueta>
+        <etiqueta>Post Apocalyptic</etiqueta>
+      </etiquetes>
+      <plataformes>
+        <plataforma nom="Steam"/>
+        <plataforma nom="PlayStation_5"/>
+        <plataforma nom="Xbox_One"/>
+      </plataformes>
+      <pegi>&pegi18;</pegi>
+      <preu>49.99</preu>
+      <valoracio>9.5</valoracio>
       <estoc>900</estoc>
-      <data_llançament>3 Apr, 2025</data_llançament>
-      <descripcio>Cinco años después de su peligroso viaje por unos Estados Unidos pospandémicos, Ellie y Joel se han asentado en Jackson, Wyoming. La vida en una próspera comunidad de supervivientes les ha permitido disfrutar de paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros supervivientes más desesperados. Sin embargo, tras un hecho violento que altera esa paz, Ellie se embarca en un viaje implacable en busca de justicia.</descripcio>
-    </producte7>
-    <producte8 codi="8">
+      <data_llancament>03/04/2025</data_llancament>
+      <descripcio>Five years after their journey across a post-pandemic United States, Ellie and Joel have settled in Jackson, Wyoming. After a violent event shatters that peace, Ellie sets out on a relentless quest for justice.</descripcio>
+    </producte>
+
+    <producte codi="Prod_7" data_actualitzacio="29/09/2026">
       <nom>Persona 5 Royal</nom>
       <categories>
-        <categoria>JRPG</categoria>
-        <categoria>Story Rich</categoria>
+        <categoria genre="JRPG"/>
       </categories>
-      <plataforma>Steam</plataforma>
-      <preu>17,99</preu>
-      <valoracio>9/10</valoracio>
+      <etiquetes>
+        <etiqueta>Story Rich</etiqueta>
+        <etiqueta>Turn-Based</etiqueta>
+      </etiquetes>
+      <plataformes>
+        <plataforma nom="Steam"/>
+      </plataformes>
+      <pegi>&pegi16;</pegi>
+      <preu>17.99</preu>
+      <valoracio>9</valoracio>
       <estoc>500</estoc>
-      <data_llançament>21 Oct, 2022</data_llançament>
-      <descripcio>Lead the Phantom Thieves of Hearts in this award winning, stylish turn-based RPG filled with dungeon crawling, party customization, strategic combat, and Persona fusion. Explore Tokyo, build relationships, battle Shadows, and infiltrate the minds of the corrupt to make them change their ways!</descripcio>
-    </producte8>
-    <producte9 codi="9">
+      <data_llancament>21/10/2022</data_llancament>
+      <!-- El caràcter & és reservat en XML i s'escriu amb la referència d'entitat &amp; -->
+      <descripcio>Lead the Phantom Thieves of Hearts in this stylish turn-based RPG filled with dungeon crawling &amp; Persona fusion. Explore Tokyo, build relationships and infiltrate the minds of the corrupt.</descripcio>
+    </producte>
+
+    <producte codi="Prod_8" data_actualitzacio="29/09/2026">
       <nom>Clair Obscur: Expedition 33</nom>
       <categories>
-        <categoria>Action</categoria>
-        <categoria>Horror</categoria>
+        <categoria genre="RPG"/>
       </categories>
-      <plataforma>Steam</plataforma>
-      <preu>12,99</preu>
-      <valoracio>9/10</valoracio>
+      <etiquetes>
+        <etiqueta>Turn-Based</etiqueta>
+        <etiqueta>Story Rich</etiqueta>
+        <etiqueta>Fantasy</etiqueta>
+      </etiquetes>
+      <plataformes>
+        <plataforma nom="Steam"/>
+        <plataforma nom="PlayStation_5"/>
+        <plataforma nom="Xbox_One"/>
+      </plataformes>
+      <pegi>&pegi16;</pegi>
+      <preu>49.99</preu>
+      <valoracio>9</valoracio>
       <estoc>4000</estoc>
-      <data_llançament>16 Feb, 2012</data_llançament>
-      <descripcio>A Dark Presence stalks the small town of Bright Falls, pushing Alan Wake to the brink of sanity in his fight to unravel the mystery and save his love.</descripcio>
-    </producte9>
-    <producte1 codi="1">
-      <nom>Alan Wake</nom>
+      <data_llancament>24/04/2025</data_llancament>
+      <descripcio>Every year the Paintress wakes and erases everyone of a certain age. Expedition 33 sets out to stop her once and for all.</descripcio>
+    </producte>
+
+    <producte codi="Prod_9" data_actualitzacio="29/09/2026">
+      <nom>Dying Light: The Beast</nom>
       <categories>
-        <categoria>Action</categoria>
-        <categoria>Horror</categoria>
+        <categoria genre="Action"/>
+        <categoria genre="Survival Horror"/>
       </categories>
-      <plataforma>Steam</plataforma>
-      <preu>12,99</preu>
-      <valoracio>9/10</valoracio>
-      <estoc>4000</estoc>
-      <data_llançament>16 Feb, 2012</data_llançament>
-      <descripcio>A Dark Presence stalks the small town of Bright Falls, pushing Alan Wake to the brink of sanity in his fight to unravel the mystery and save his love.</descripcio>
-    </producte1>
-    <producte1 codi="1">
-      <nom>Alan Wake</nom>
+      <etiquetes>
+        <etiqueta>Zombies</etiqueta>
+        <etiqueta>Open World</etiqueta>
+        <etiqueta>Single-player</etiqueta>
+      </etiquetes>
+      <plataformes>
+        <plataforma nom="Steam"/>
+        <plataforma nom="PlayStation_5"/>
+        <plataforma nom="Xbox_One"/>
+      </plataformes>
+      <pegi>&pegi18;</pegi>
+      <preu>59.99</preu>
+      <valoracio>9</valoracio>
+      <estoc>500</estoc>
+      <data_llancament>19/09/2025</data_llancament>
+      <descripcio>Kyle Crane returns to fight his way out of the Castor Woods after years of captivity. Survive a dangerous open world overrun by zombies and unleash the Beast within.</descripcio>
+    </producte>
+
+    <producte codi="Prod_10" data_actualitzacio="29/09/2026">
+      <nom>Resident Evil 4</nom>
       <categories>
-        <categoria>Action</categoria>
-        <categoria>Horror</categoria>
+        <categoria genre="Action"/>
+        <categoria genre="Survival Horror"/>
       </categories>
-      <plataforma>Steam</plataforma>
-      <preu>12,99</preu>
-      <valoracio>9/10</valoracio>
-      <estoc>4000</estoc>
-      <data_llançament>16 Feb, 2012</data_llançament>
-      <descripcio>A Dark Presence stalks the small town of Bright Falls, pushing Alan Wake to the brink of sanity in his fight to unravel the mystery and save his love.</descripcio>
-    </producte1>
+      <etiquetes>
+        <etiqueta>Remake</etiqueta>
+        <etiqueta>Single-player</etiqueta>
+      </etiquetes>
+      <plataformes>
+        <plataforma nom="Steam"/>
+        <plataforma nom="PlayStation_5"/>
+        <plataforma nom="Xbox_One"/>
+      </plataformes>
+      <pegi>&pegi18;</pegi>
+      <preu>39.99</preu>
+      <valoracio>9</valoracio>
+      <estoc>450</estoc>
+      <data_llancament>24/03/2023</data_llancament>
+      <descripcio>Leon S. Kennedy is sent to a remote European village to rescue the president's daughter. He soon uncovers a sinister cult behind her kidnapping.</descripcio>
+    </producte>
 
   </productes>
 </botiga>
