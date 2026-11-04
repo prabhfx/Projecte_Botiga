@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <!-- Codificació, adaptació a mòbil i dades bàsiques del document -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNLCKED · Contacte</title>
+  <meta name="description" content="Formulari de contacte d&#x27;UNLCKED per resoldre dubtes sobre els discos amb clau digital.">
+  <!-- Full d'estils extern únic (de moment buit) -->
+  <link rel="stylesheet" href="css/estils.css">
+</head>
+<body>
+  <header id="capcalera" class="capcalera">
+    <a href="index.html"><img id="logo" class="logo" src="img/logo.png" alt="Logotip d'UNLCKED" width="240" height="80"></a>
+    <p class="eslogan">Discos físics amb la clau digital del teu videojoc</p>
+    <nav id="menu-principal" class="menu" aria-label="Menú principal">
+      <ul>
+          <li><a href="index.html">Catàleg</a></li>
+          <li><a href="fitxa.html">Fitxa de producte</a></li>
+          <li><a href="contacte.html" aria-current="page">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contingut" class="contingut">
+    <section id="contacte" class="contacte">
+      <h2>Contacta amb nosaltres</h2>
+      <p>Omple el formulari i et respondrem com abans puguis. Els camps marcats amb <strong>*</strong> són obligatoris.</p>
+
+      <form id="formulari-contacte" class="formulari" action="#" method="post">
+        <fieldset>
+          <legend>Les teves dades</legend>
+
+          <p>
+            <label for="nom">Nom * </label>
+            <input type="text" id="nom" name="nom" required>
+          </p>
+
+          <p>
+            <label for="correu">Correu electrònic * </label>
+            <input type="email" id="correu" name="correu" required>
+          </p>
+
+          <p>
+            <label for="telefon">Telèfon </label>
+            <input type="tel" id="telefon" name="telefon">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>La teva consulta</legend>
+
+          <p>
+            <label for="producte">Producte </label>
+            <select id="producte" name="producte">
+              <option value="">Cap en concret</option>
+          <option value="Prod_1">Alan Wake</option>
+          <option value="Prod_2">Dying Light</option>
+          <option value="Prod_3">Marvel: Wolverine</option>
+          <option value="Prod_4">Crimson Desert Enhanced</option>
+          <option value="Prod_5">Yandere Simulator</option>
+          <option value="Prod_6">The Last of Us™ Part II Remastered</option>
+          <option value="Prod_7">Persona 5 Royal</option>
+          <option value="Prod_8">Clair Obscur: Expedition 33</option>
+          <option value="Prod_9">Dying Light: The Beast</option>
+          <option value="Prod_10">Resident Evil 4</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="quantitat">Quantitat de discs </label>
+            <input type="number" id="quantitat" name="quantitat" min="1" max="10" value="1">
+          </p>
+
+          <p>Plataforma:</p>
+          <p>
+            <input type="radio" id="plat-steam" name="plataforma" value="Steam">
+            <label for="plat-steam">Steam</label>
+            <input type="radio" id="plat-ps5" name="plataforma" value="PlayStation 5">
+            <label for="plat-ps5">PlayStation 5</label>
+            <input type="radio" id="plat-xbox" name="plataforma" value="Xbox One">
+            <label for="plat-xbox">Xbox One</label>
+          </p>
+
+          <p>
+            <label for="missatge">Missatge * </label>
+            <textarea id="missatge" name="missatge" rows="5" cols="40" required></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="acceptacio" name="acceptacio" required>
+          <label for="acceptacio">He llegit i accepto la política de privacitat *</label>
+        </p>
+
+        <p>
+          <button type="submit" id="enviar" class="boto">Envia</button>
+          <button type="reset" id="esborrar" class="boto">Esborra</button>
+        </p>
+      </form>
+    </section>
+
+    <aside id="lateral" class="lateral">
+      <h2>Altres vies de contacte</h2>
+      <address>
+        UNLCKED<br>
+        Barcelona<br>
+        <a href="mailto:info@unlcked.example">info@unlcked.example</a>
+      </address>
+      <p>Consulta abans el <a href="index.html">catàleg</a> per veure tots els discos disponibles.</p>
+    </aside>
+  </main>
+
+  <footer id="peu" class="peu">
+    <p>&copy; 2026 <strong>UNLCKED</strong>. Botiga fictícia per al projecte del mòdul 0373.</p>
+    <p>Més informació sobre la classificació per edats a <a href="https://pegi.info/" target="_blank" rel="noopener">pegi.info</a>.</p>
+  </footer>
+</body>
+</html>

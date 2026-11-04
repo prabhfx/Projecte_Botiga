@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <!-- Codificació, adaptació a mòbil i dades bàsiques del document -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNLCKED · Fitxa de Alan Wake</title>
+  <meta name="description" content="Fitxa del producte Alan Wake: dades tècniques, preu, valoració i tràiler.">
+  <!-- Full d'estils extern únic (de moment buit) -->
+  <link rel="stylesheet" href="css/estils.css">
+</head>
+<body>
+  <header id="capcalera" class="capcalera">
+    <a href="index.html"><img id="logo" class="logo" src="img/logo.png" alt="Logotip d'UNLCKED" width="240" height="80"></a>
+    <p class="eslogan">Discos físics amb la clau digital del teu videojoc</p>
+    <nav id="menu-principal" class="menu" aria-label="Menú principal">
+      <ul>
+          <li><a href="index.html">Catàleg</a></li>
+          <li><a href="fitxa.html" aria-current="page">Fitxa de producte</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contingut" class="contingut">
+    <article id="fitxa-producte" class="fitxa" data-codi="Prod_1">
+      <h2 id="fitxa-titol">Alan Wake</h2>
+
+      <figure class="fitxa-figura">
+        <img id="fitxa-imatge" src="img/alan-wake.png" alt="Portada del joc Alan Wake" width="600" height="400">
+        <figcaption>Portada de <cite>Alan Wake</cite></figcaption>
+      </figure>
+
+      <section id="fitxa-resum" class="fitxa-resum">
+        <h3>Resum</h3>
+        <p id="fitxa-descripcio" lang="en">A Dark Presence stalks the small town of Bright Falls, pushing Alan Wake to the brink of sanity in his fight to unravel the mystery and save his love.</p>
+        <p>Preu: <strong id="fitxa-preu">12,99 €</strong></p>
+        <p>Valoració: <em id="fitxa-valoracio">9/10</em></p>
+        <p>Etiquetes: Thriller, Single-player</p>
+        <p><a class="boto" href="contacte.html">Demana més informació</a></p>
+      </section>
+
+      <section id="fitxa-dades" class="fitxa-dades">
+        <h3>Dades tècniques</h3>
+        <table id="taula-dades">
+          <caption>Dades tècniques de Alan Wake</caption>
+          <thead>
+            <tr>
+              <th scope="col">Camp</th>
+              <th scope="col">Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Codi</th><td>Prod_1</td></tr>
+            <tr><th scope="row">Categories</th><td>Action, Horror</td></tr>
+            <tr><th scope="row">Plataformes</th><td>Steam</td></tr>
+            <tr><th scope="row">Classificació</th><td>PEGI&lt;16</td></tr>
+            <tr><th scope="row">Data de llançament</th><td><time datetime="2012-02-16">16/02/2012</time></td></tr>
+            <tr><th scope="row">Estoc</th><td>400 unitats</td></tr>
+            <tr><th scope="row">Preu</th><td>12,99 €</td></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Última actualització: <time datetime="2026-09-29">29/09/2026</time></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="fitxa-multimedia" class="fitxa-multimedia">
+        <h3>Tràiler</h3>
+        <!-- Vídeo propi de la botiga (generat per a la pràctica) -->
+        <video id="fitxa-video" controls width="600" poster="img/alan-wake.png">
+          <source src="video/trailer.mp4" type="video/mp4">
+          El teu navegador no admet l'element de vídeo.
+        </video>
+      </section>
+    </article>
+
+    <aside id="lateral" class="lateral">
+      <h2>També et pot interessar</h2>
+      <ul>
+          <li><a href="index.html#Prod_2">Dying Light</a></li>
+          <li><a href="index.html#Prod_3">Marvel: Wolverine</a></li>
+          <li><a href="index.html#Prod_4">Crimson Desert Enhanced</a></li>
+          <li><a href="index.html#Prod_5">Yandere Simulator</a></li>
+          <li><a href="index.html#Prod_6">The Last of Us™ Part II Remastered</a></li>
+      </ul>
+      <p><a href="index.html">Tornar al catàleg</a></p>
+    </aside>
+  </main>
+
+  <footer id="peu" class="peu">
+    <p>&copy; 2026 <strong>UNLCKED</strong>. Botiga fictícia per al projecte del mòdul 0373.</p>
+    <p>Més informació sobre la classificació per edats a <a href="https://pegi.info/" target="_blank" rel="noopener">pegi.info</a>.</p>
+  </footer>
+</body>
+</html>
